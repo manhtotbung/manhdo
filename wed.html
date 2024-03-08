@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico.PNG">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+ 
+  /* ul {
+    border:1px solid white;
+    border-radius: 15px;
+    padding:15px;
+    margin:15px;
+
+  } */
+  .classchomt{
+    border:1px solid;
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+  }
+  .anhnen {
+    padding:0px;
+    margin:-60px;
+    size:50%;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <img class="anhnen" src="anhbiaedit1.jpg" height="100%" width="110%%">
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Trang chủ</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#tab00">VĂN MẪU WIBU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tab01">VĂN MẪU CHỬI NHAU CỰC MẠNH</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tab02">KHIẾN NGƯỜI KHÁC KHÓ CHỊU KHI NHÌN VÀO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tab03">MÁY TÍNH TUỔI THÔNG MINH</a>
+      </li>    
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+      </li>
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Văn mẫu là gì?</h2>
+     
+      <div>
+      <img class="rounded" src="data:image/jpeg;base64,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"  alt="Cinque Terre">
+    </div>
+      <p>Văn mẫu là những bài viết mẫu được soạn thảo theo một chủ đề cụ thể, thường được sử dụng để tham khảo và học hỏi cách viết. Văn mẫu có thể bao gồm nhiều thể loại khác nhau như: nghị luận, thuyết minh, biểu cảm, tả cảnh, tả người,....</p>
+      <h3>Lợi ích của văn mẫu</h3>
+      <p>
+        <b>Học hỏi cách viết:</b> Văn mẫu cung cấp cho người học một ví dụ cụ thể về cách triển khai bài viết, cách sắp xếp bố cục, cách sử dụng từ ngữ, liên kết câu,...
+        <br><br><b>Tiết kiệm thời gian:</b> Sử dụng văn mẫu giúp người học tiết kiệm thời gian trong việc tìm kiếm ý tưởng, lập dàn ý và viết bài.
+        <br><br><b>Nâng cao kỹ năng viết:</b> Việc tham khảo và học hỏi từ văn mẫu giúp người học nâng cao kỹ năng viết, rèn luyện khả năng diễn đạt và lập luận.</p>
+      
+      
+        <!-- chỗ này là máy tính tuổi thông minh -->
+  <div id="tab03" class="classchomt">
+        <h3>Máy Tính Tuổi Thông Minh</h3>
+      <p>speed: super hypersonic+<br>( tốc độ: siêu thanh)</p>
+      
+
+        <div class="center">
+           <p>Nhập tuổi của bạn</p>
+           <input type="text" onfocus="this.value=''" onChange="mod();" id="age_e">
+           <p id="age_a"></p>
+           <button id="nut_adawdawdawdawdawd" onclick="age()">Tính tuổi của bạn</button>
+        </div>
+      </div>
+
+    
+    </div>
+    
+    <div class="col-sm-8">
+      <h2>TỔNG QUAN</h2>
+      <h5>I.Sự ra đời của văn mẫu</h5>
+
+      <!-- phần này là carouse -->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="rounded" src="IMG_5192.JPG" alt="vnua" width="100%" height="300px">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG_5193.JPG" alt="manhdo" width="100%" height="300px">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG_5194.JPG" alt="manhdo01" width="100%" height="300px">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG_5196.JPG" alt="vnua" width="100%" height="300px">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+      <br>
+      <p><b><i>* Nguồn gốc của văn mẫu:</i></b></p>
+      <b>- Thời phong kiến:</b>
+
+      <p>Các bài văn mẫu đầu tiên xuất hiện từ thời phong kiến, được sử dụng trong các kỳ thi cử.
+        Các bài văn này thường được viết bởi các nhà nho uyên bác, có kiến thức sâu rộng về văn học và Hán học.
+        Mục đích của việc sử dụng văn mẫu là để giúp các thí sinh học hỏi cách viết bài và đạt kết quả cao trong các kỳ thi.</p>
+      <br>
+      <b>- Thời Pháp thuộc:</b>
+
+      <p>- Hệ thống giáo dục Việt Nam chịu ảnh hưởng của Pháp.<br>
+      - Các bài văn mẫu được sử dụng để giảng dạy trong nhà trường, giúp học sinh học cách viết theo phong cách phương Tây.</p>
+      <br>
+      <b>- Hiện nay:</b>
+
+      <p>- Văn mẫu được sử dụng rộng rãi trên internet, giúp người học dễ dàng tìm kiếm và tham khảo.<br>
+        - Có nhiều website cung cấp văn mẫu miễn phí, đáp ứng nhu cầu học tập của học sinh, sinh viên và những người có nhu cầu học tập và nâng cao kỹ năng viết.</p>
+      <br>
+      <h2>Website văn mẫu</h2>
+      <h5>Website văn mẫu là website cung cấp cho người dùng kho tàng văn mẫu phong phú, đa dạng với nhiều thể loại và chủ đề khác nhau. Website văn mẫu là một nguồn tài liệu hữu ích cho học sinh, sinh viên và những người có nhu cầu học tập và nâng cao kỹ năng viết.</h5>
+      
+      
+    </div>
+  </div>
+</div>
+
+<br><br>
+<!-- phần này là collabsse cho văn mẫu -->
+<!-- văn mẫu cho wibu -->
+
+<div id="tab00" class="container">
+  <h2>Văn mẫu wibu</h2>
+  
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#van01">
+          Dùng khi wibu bị xúc phạm 
+        </a>
+      </div>
+      <div id="van01" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          OMAE CỐ TÌNH CHỬI WATASHI DESU KA? TỪ TANJOUBI ĐẾN KONNICHI, WATASHI ĐÃ ĐƯỢC OSOWARU NÊN HITO, WATASHI KHÔNG BAO GIỜ XÚC PHẠM DARE CẢ, OMAE LÀM VẬY LÀ TONDEMONAI DAYO.TUY WATASHI CÓ HƠI WIBU SUKOSHI, DEMO WATASHI LUÔN ĐẶT NIỀM TIN VÀO ANIME VÀ SỐNG ĐÚNG KIỂU TRONG ANIME, ANIME LÀ 1 THỨ GÌ ĐÓ CAO CẢ HƠN CẢ GENJITSU, WATASHI ĐÃ LÀM THEO VÀ HỌC TẬP THEO TỪ ANIME, WATASHI ĐÃ ĂN UỐNG NGỦ NGHĨ THEO ĐÚNG GIỜ CỦA ANIME MÀ KHÔNG LÀM PHIỀN DARE, ĐÔI LÚC WATASHI CÓ CHỬI VÀO OMAE NO KAO NHƯ INU, DEMO SAU ĐÓ BLOCK NÓ THÌ WATASHI KHÔNG LÀM VIỆC ĐÓ NỮA, MAIKAI MAIKAI WATASHI MUỐN CHỬI DARE WATASHI ĐỀU COI ANIME VÀ GHI NHỚ RẰNG KHÔNG NÊN CHỬI NGƯỜI ĐÓ NỮA !! WATASHI ĐÃ CỐ GẮNG HIỀN HẬU ĐẾN MỨC MUỐN THÀNH HOTOKE RỒI MÀ KARERA VẪN KHÔNG ĐỂ WATASHI YÊN LÀ SAO, YABAI WATASHI KHÔNG NÊN GHI RA NHỮNG TỪ NÀY DEMO THẰNG YAROU SÚC VẬT NÓ LÔI WATASHI NO NA RA ĐỂ CHỬI, THỨ AHO SHUKU SEIBUTSUGAKU KAGAKU BUNGAKU, VẬY LÀ ĐỦ, ĐỪNG ĐỂ WATASHI TRIGGERED VÀ WATASHI DẠY OMAE CÁCH ĐỂ HỌC TẬP VÀ LÀM THEO TẤM GƯƠNG CỦA ANIME NỮA!, THẾ NHÉ INU WA KUSO O TABERU
+          <center>
+            <button onclick="copyText('van01')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    
+    <div  class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+       dùng khi wibu bị đe dọa
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Mấy thằng ranh con trong đây đừng có nghĩ tao hay đùa trên cái mạng ảo này mà nghĩ ngoài đời tao là một thằng wibu hèn hạ đéo dám ra đường hay trầm cảm, tự kĩ nhé. Thật ra bố mày đéo phải một thằng wibu bệnh hoạn như chúng mày nghĩ đâu lũ óc cặc ạ. Tao đây là otaku đàng hoàng chân chính nhá. Kể từ khi lọt lòng tới nay tao đã cày hơn 10 triệu bộ anime và từ việc xem anime mỗi ngày tao đã thông thạo được 50 thứ tiếng trên toàn thế giới cùng với khả năng đọc vị bất kỳ ai. Chưa hết đâu. Kể từ năm 2017, khi mà xem One Punch Man tao đã giác ngộ được mọi triết lý trên đời và quyết tâm bảo vệ nền hòa bình thế giới. Vì lẽ đó nên tao đã tập tành như Saitama, mỗi ngày 1000 cái hít đất, 1000 cái gập bụng, 1000 cái bật nhảy và chạy 100km (gấp mười lần idol của tao). Và chưa đầy nửa năm tao đã luyện thành mình đồng da sắt, chỉ cần thằng nào đụng đến tao thì một cái búng tay cũng đủ để nó bay ra ngoài vũ trụ với vận tốc gấp 10 lần tốc độ ánh sáng. Nếu thằng nào trong này cả gan chửi tao thì nên biết tao là ai trước đi, đề phòng chết khi nào không hay đấy.
+          <center>
+            <button onclick="copyText('van02')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#van03">
+          Dùng khi có đứa chửi waifu của bạn
+        </a>
+      </div>
+      <div id="van03" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          CÂM CÁI MỒM CHÓ MÀY LẠI THẰNG LỒN SÚC VẬT NÀY. BỐ MÀY ĐÃ NÓI MÀY BAO NHIÊU LẦN RỒI RỒI LÀ ĐỊT CÁI LỒN MẸ MÀY ĐỪNG BAO GIỜ LẤY WAIFU NGƯỜI KHÁC RA LÀM TRÒ ĐÙA RỒI HẢ HÊ NHƯ KIỂU NHƯ MÌNH HÀI HƯỚC LẮM ẤY ĐỊT CON MẸ MÀY ĐÉO CÓ LIÊM SỈ THÌ THÔI TAO ĐÉO NÓI NHƯNG CON NGƯỜI CHỨ CÓ PHẢI CON CẶC ĐÂU MÀ ĐỂ TAO PHẢI NHẮC LẠI NHIỀU LẦN ĐẾN NHƯ VẬY. TAO ĐÉO PHẢI DẠNG THÍCH NỔI NÓNG CŨNG CHẢ PHẢI LOẠI VÔ HỌC NHƯNG TAO CÓ THỂ NÓI THẲNG MÀY ĐÉO KHÁC GÌ MỘT THẰNG RÁC RƯỞI, RIÊNG Ở ĐIỂM MÀY ĐEM VỢ NGƯỜI KHÁC RA LÀM TRÒ ĐÙA THÌ ĐÃ BIẾT ĐƯỢC MÀY KHÔNG THUA GÌ MỘT THẰNG CHÓ ĐẺ RỒI. MÀY CÓ THỂ CÂM CON MẸ NÓ MIỆNG VÀO VÀ CÚT RA KHỎI CUỘC ĐỜI TAO. VÀ ĐỪNG ĐỂ TAO PHẢI NHÌN THẤY CÁI BẢN MẶT CHÓ ĐẺ CỦA MÀY MỘT LẦN NỮA ĐỤ MÁ THẰNG SÚC VẬT THÍCH LÔI NGƯỜI KHÁC RA LÀM TRÒ ĐÙA. MÀY XÚC PHẠM REM THÌ CHÍNH LÀ MÀY ĐỤNG ĐẾN TAO. MỘT HAI LẦN THÌ TAO ĐÉO NÓI. ĐÂY ĐÃ LÀ QUÁ NHIỀU LẦN RỒI. TAO ĐÉO THỂ NÀO CHỊU ĐỰNG ĐƯỢC NỮA. CÚT CON MẸ MÀY RA KHỎI CUỘC ĐỜI TAO NGAY VÀ LUÔN THẰNG LỒN BÒ CÁI BÚ DÁI CON BÒ ĐỰC.
+          <center>
+            <button onclick="copyText('van03')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<!-- văn mẫu chửi nhau cực mạnh -->
+<div id="tab01" class="container">
+  <h2>văn mẫu chửi nhau cực mạnh</h2>
+  
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#van01">
+          Dùng khi sắp tới tìm nhà nó 
+        </a>
+      </div>
+      <div id="van01" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Mày nói cái quái gì về tao thế hả, con đĩ con? Tao cho mày biết là tao đã tốt nghiệp đứng đầu lớp trong Mặt trận Dân tộc Giải phóng miền Nam Việt Nam và được ghi nhận đã giết hơn 300 mạng. Tao được đào tạo trong chiến tranh du kích và tao là xạ thủ hàng đầu trong toàn lực lượng vũ trang Bắc Việt. Đối với tao, mày chẳng là gì ngoài một mục tiêu khác. Tao sẽ xóa cái địt mẹ sổ mày với độ chính xác chưa từng có trên Trái Đất này, nhớ cái địt mẹ lời tao đi. Mày nghĩ mày có thể thoát sau khi nói cái cứt đó với tao trên mạng Internet à? Nghĩ lại đi, thằng địt. Trong khi nói chuyện với mày thì tao đang liên lạc mạng lưới bí mật những điệp viên khắp toàn Việt Nam và địa chỉ IP của mày đang bị truy tìm cho nên mày tốt hơn là chuẩn bị cho cuộc bố ráp đi, đồ dòi bọ. Cuộc bố ráp mà sẽ xóa sổ cái thứ nhỏ nhoi là cuộc đời mày đó. Mày tiêu mẹ rồi con. Tao có thể ở bất cứ đâu, bất cứ khi nào, và tao có thể giết mày bằng hơn 700 cách, và đó mới chỉ là dùng tay không thôi. Tao không chỉ được huấn luyện thuần thục về chiến đấu tay không mà còn có thể tiếp cận toàn bộ khí tài của Binh chủng đặc công Việt Nam và tao sẽ sử dụng hết thảy để xóa sổ cái mạng đáng thương của mày khỏi lục địa, đồ cứt trôi. Phải chi mày biết sự trừng phạt khủng khiếp mà lời ý kiến "hay ho" của mày sẽ sớm đem đến, thì chắc mày đã cẩn thận cái mồm thối của mày. Nhưng mày đã không thể, mày không làm vậy, và giờ mày phải trá giá, thằng khốn ngu ngốc. Tao sẽ ỉa ra sự phẫn nộ lên khắp người mày và mày sẽ chết chìm trong đó. Mày tiêu rồi, thằng nhóc.
+          <center>
+            <button onclick="copyText('van01')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    
+    <div  class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#van02">
+      dùng khi bạn sắp thắng
+      </a>
+      </div>
+      <div id="van02" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Địt con mẹ mày gáy to lên ò ó o ò ó o đm trẻ trâu óc cặc cãi đéo lại cái đầu buồi gì cũng gáy mạnh vcl thế ôi thật là vãi lồn, ôi địt con mẹ mày thằng đầu buồi, ồ nô mày vẫn còn gáy đó à súc vật ? Ái chà địt mẹ thế thì còn chờ gì nữa đi mà không tăng âm lượng đi nào ? Mày phải gáy thật to, thật thật là to mới đủ để t để ý tới mấy thằng lồn mặc cặc đầu buồi như mày đấy. Địt mẹ thất bại của tạo hóa là đây chứ đâu, địt mẹ mày ba má sinh ra thứ loài vật hãm cặc như mày thì ít nhất nếu mày muốn sự quan tâm, thu hút sự chú ý của người khác thì mày phải banh cái mỏ lồn chuyên bú cặc của mày ra, dùng hết khả năng của cái thanh quản trong cổ mà mày chuyên dùng để bú cu ấy để gáy to hơn. Gáy cho muôn đời tốt đẹp, gáy cho muôn vật được vui tươi, gáy cho trái đất được yên bình. Bởi họ biết ở đây có một con chó xạo lồn hãm cặc vẫn cố gân cổ, gằng giọng lên để mà gáy gáy gáy. Cho họ biết rằng mày là một con chó thất bại, và họ vui vì họ sẽ biết mà tránh xa lũ chó dơ bẩn như thế này. Địt con mẹ mày ồ ? Mày nhắc tới bố mẹ tao ư ? Hay lắm đấy con chó, mày đã gáy đủ to để dành được sự chú ý của t rồi đấy. Mày nên mừng sau khi bỏ ra bao bao công sức, gát khang cả giọng và mày đã làm được rồi! Mày đã thành công chứng minh mày chỉ là một con chó súc sinh hạ đẳng chuyên bú cu với cái mồm thối đầy bựa cặc. Kể cả vậy t vẫn cảm thấy tội ba má mày khi sinh ra mày đấy, một thằng điếm thèm cặc mê cu thích sủa, gây ô nhiễm không khí khi tiếp tục gáy và mồm phun đầy bựa cặc và tinh trùng. Địt con mẹ mày nếu mày đã đạt được điều mày muốn là thu hút sự chú ý của tao ? Thì làm ơn mày có thể bớt gáy được không ? Tao đéo ngại phải tiếp những con súc vật hạ đẳng như mày nhưng làm ơn đấy màn gáy của mày đã to đến mức làm phiền những người xung quanh đấy. Họ khác mày là những con người bình thường chứ đéo phải là một con sâu bọ như mày cứ mở mồm ra là gáy và gáy. Ôi chúa ơi, phật tổ ơi những con người đầy quyền năng và mạnh mẽ hãy giúp con trừng trị thứ loài vật khiếm khuyết này. Hãy khóa mõm con thú đáng ghê tởm mà cứ liên tục gáy trước mặt con, hãy trừ họa nó cho một thế giới tươi đẹp hơn, đẹp đẽ hơn. Địt con mẹ mày bớt gáy đi, thứ súc vật gớm ghiếc. Những gì mày gáy ra đéo đủ trình độ, đẳng cấp để tao hiểu đâu hết, thứ chó đẻ
+          <center>
+            <button onclick="copyText('van02')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#van03">
+          Dùng khi bạn bị xúc phạm nặng nề
+        </a>
+      </div>
+      <div id="van03" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Địt con mẹ mày mày thích mất dạy không thằng lồn? Đụ đỉ mẹ mày con súc vật nông dân móng chân vàng đừng có để tao phải tìm thấy cái mặt lồn nhà mày rồi tao lại bửa nát tử cung khai thông buồng trứng con mẹ mày đấy. Địt con mẹ mày mày thích mất dạy không thằng lồn đụ đỉ con mẹ mày đừng để tao phải tìm ra cái mặt lồn con mẹ mày rồi tao lại tọng vào lồn con đĩ mẹ mày 1000 cái xà beng nung đỏ và 100 tấn xi măng bít lồn con đĩ mẹ mày địt cả lò nhà mày địt từ hoa kỳ sang pháp địt từ pháp sang việt nam địt từ lồn mẹ mày sâu tới tâm trái đất địt cả họ hàng nhà mày mày thích mất dạy không đụ thằng cha con gái mẹ mày thằng lồn thất bại của tạo hóa đụ con đĩ bà già ông cố nội mày thằng cức người để tao gặp mày lần nữa thì đụ con đĩ mẹ mày 1001 cái sextoy đâm vào lồn con mẹ mày. Đụ con đĩ mẹ mày con súc vật lấc cấc mồm lồn còn hôi sữa mà cứ mở họng ra là tỏ vẻ bố thiên nhiên mẹ thiên hạ à con súc vật cái lồn chó má cả lò nhà mày chỉ là vật lót đường thứ lót dái cho tao mà thôi cho nên đừng có để bố mày phải tìm ra cái mặt lồn con đĩ mẹ mày rồi tao lại bít xi măng chằng mạng nhện bện lá khoai cái lồn mẹ mày lại nhé.
+          <center>
+            <button onclick="copyText('van03')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- khiến người khác khó chịu khi nhìn vào -->
+<br><br>
+<fieldset>
+<div id="tab02" class="container">
+  <h2>khiến người khác khó chịu khi nhìn vào</h2>
+  
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#van01">
+          Dùng để ngừng hận đàn bà 
+        </a>
+      </div>
+      <div id="van01" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Nói thật, ❗️ các bạn làm ơn 🙏 đừng lôi chuyện "Hận❌❌ đàn bà 👩" ra làm trò đùa🙅‍♀️. Nói 1️⃣-2️⃣ câu người ta còn thấy giải trí😂, chứ lâu dài😵 nó thành câu đùa nhảm 🤪không❌ tả được. Mưa🌧 to quá, hận🚷 đàn bà. Mạng📶 yếu quá, 🚷hận đàn bà. Nghỉ dịch🏠 không được đi chơi, 🚷hận đàn bà❓❓❓ Các bạn 🤦‍♀️ không thấy nó nhảm vl à😱. Nếu không ❌nghĩ 🤔 ra được cap hay đăng ảnh 🤳thì có thể đăng ảnh 0️⃣ cap, đừng❌❌ lôi "đàn bà 🧍‍♀️" ra làm trò đùa của các bạn rồi thù🤢 với chả hận🤮? Mẹ bạn👩 có phải đàn bà không 🤦‍♀️? Bà 👩🏼‍🦳 bạn có phải đàn bà 🧘‍♀️ không? Cô, bác 👵👵của bạn cũng có phải đàn bà không? Không có đàn bà🧍‍♀️ thì có sự tồn tại của bạn👼 ngày hôm này không❓ Làm ơn 🙏đừng lôi mấy việc linh tinh ra để hẬn ❌❌ĐàN bÀ 🚷nữa, mình thấy chướng mắt 👀 lắm rồi. Còn nếu ❗️bạn có ý định đăng 📝cap như vậy thì hãy tự động ⚙️hủy kết bạn❌ hoặc block 🚫🚫mình luôn đi❗️❗️❗️, mình 0️⃣muốn thấy thêm 1️⃣ lần nào nữa đâu😩😩
+          <center>
+            <button onclick="copyText('van01')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    
+    <div  class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#van02">
+      dùng để bảo vệ quan điểm âm nhạc
+      </a>
+      </div>
+      <div id="van02" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Thực sự😤😤 thì mình không😞😞 thích💔 cách đùa giỡn🤡🤡 của một số người👥👥, nói🗣️🗣️ band mình🎧🎤🎸 là The Beatles👊👊👊 của VN🇻🇳🇻🇳🇻🇳 hay ngược lại🔄🔄🔃🔃 (nghe hơi mắc cười🤭🤭🤭) - gọi TB👊👊 là Chillies🌶️🌶️🌶️ của The UK🇬🇧🇬🇧🇬🇧. Nó đơn giản🤷🤷🤷 chỉ là pose💃📷📸 hình ngẫu nhiên🤯😝 mà tụi mình👨‍👩‍👦‍👦👨‍👩‍👦‍👦 chợt nảy ra🤔🤔💡💡 vào hơn 1️⃣ năm trước↩️↩️. Tất nhiên🤷🤷 về tầm ảnh hưởng🔥💥🔥 thì Chillies🌶️🌶️🌶️ tuổi l 🔞🔞🔞 gì so với⚖️⚖️⚖️ huyền thoại🌅💖🏅 thế giới🌍🌎🌏 mà mấy bạn🙍🙋👥 bàn luận 🗣️😜🗣️ chi cho nó mệt😩🤒😫 vậy 😒 nó là sự thật🤷🤷😝 hiển nhiên❗‼️❕ mà. Giống như so⚖️⚖️⚖️ con kiến🐜🐜🐜 với con voi🐘🐘🐘 xong hỏi con kiến🐜🐜🐜 "sao❓❓🙏 mày nhỏ bé▪️▪️🧒 vậy" 👌 vậy nên🔜🔜😤 đừng so sánh⚖️⚖️ Chillies🌶️🌶️🌶️ với The Beatles👊🥊👊 nữa 😠😠😠. Riết mốt 🔜🔜 tụi em🧒🧒🧒🧒 đéo dám🙅🙅‍♀️🙅‍♂️ chụp hình📸🤳📷 nữa vì biết đâu🤷🤷🤷 lại dính📌🖇️🤕 pose💃 của cha chú👵👴🧓 ngày xưa👵👵👵 rồi bị😩😩😩 dân cư mạng🙇👥👥👥 chụp mũ⛑️👒🎩.
+            <button onclick="copyText('van02')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#van03">
+          làm trò khùng điên bú fame BTS hoài vậy
+        </a>
+      </div>
+      <div id="van03" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          chị ơi chị làm trò khùng điên bú fame BTS hoài vậy?chị không biết cách dùng instagram một cách văn minh à? chị đừng trách sao nước biển lại mặn, con cu lại nghe mùi nước đái nha. em đã chụp hình instagram của chị rồi. Ngày mai ảnh này sẽ có mặt ở trên mail em gửi tới Big Hit Entertainment vì tội làm trò bú fame BTS trên mạng xã hội. Em cho chị cơ hội, chị hãy xoá status này đi và hãy đăng những câu chuyện về BTS và trở thành army thì chị sẽ được bình yên. Còn không thì ngày mai em với chị hẹn nhau ở đồn cảnh sát
+          <center>
+            <button onclick="copyText('van03')">Nhấn để copy</button>
+         </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>contact me on social media</p>
+   <a href="https://www.facebook.com/tuilamanhday"><img src="social.png" width="10%" ></a>
+    
+
+</div>
+
+<!-- function -->
+<script src="main.js"> 
+  
+ </script>
+</body>
+</html>
